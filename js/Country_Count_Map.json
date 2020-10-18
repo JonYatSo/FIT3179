@@ -24,21 +24,21 @@
         {
           "mark": {
             "type": "circle",
-            "opacity": 0.8,
-            "tooltip": [{"field": "Country", "type":"nominal"},{"field": "Count", "type":"quantitative"}
-                        ]
-          },
+            "opacity": 0.7
+                      },
           "encoding": {
-            "size": {"field": "Count
+            "size": {"field": "Count",
                      "type": "quantitative",
                      "scale": {
-                          "type":"Count"
+                          "domain":[10,50,100],
+                          "type":"threshold",
                           "zero": false
-                        }},
-         
+                        }
+                      
+                         },
+            "tooltip": [{"field": "Country", "type":"nominal"},{"field": "Count", "type":"quantitative"}]   
             }
           }
-        }
       ]
     }
   ]

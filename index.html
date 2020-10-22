@@ -12,13 +12,27 @@
   
 </head>
 <body>
-  
-<div id="symbol_map"></div>
+
+<h1>FIT3179 Week 10 Homework by Yat So 29695848</h1>
+
+<h2>First Visualisation(Map from week 9 HW)</h2>
+<div id="country_count_map"></div>
+
+<h2>Second Visualisation(New from task 1 this week)</h2>
+<div id="scatter_plot"></div>
 
 <script type="text/javascript">
+  
+  var vis1 = "js/Country_Count_Map.json";
+  vegaEmbed('#country_count_map', spec2).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+  
 
-  var spec2 = "js/Country_Count_Map.json";
-  vegaEmbed('#symbol_map', spec2).then(function(result) {
+  
+  var vis2 = "js/scatter_plot_interactive.vg.json";
+  
+  vegaEmbed('#scatter_plot', vis2).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 </script>

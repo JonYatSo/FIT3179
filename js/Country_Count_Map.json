@@ -28,7 +28,7 @@
             "opacity": 0.7
                       },
           "encoding": {
-            "size": {"field": "Count",
+            "size": {"field": "n",
                      "type": "quantitative",
                      "scale": {
                           "domain":[10,50,100],
